@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  background-color: transparent;
+  position: fixed;
+  align-items: center;
+  /* border: 1px solid white; */
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header > h1 {
+  color: #fed135;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 23px;
+  padding-left: 7%;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  width: 30vw;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navlist{
+ display: flex;
+ justify-content: space-around;
+ width: 450px;
+}
+
+.nav-item{
+  color: white;
+  font-family: arial;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 13px;
+  padding-right: 45px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.nav-item:hover{
+  color: #fed135;
+}
+
+@media(max-width: 800px){
+  .nav-item{
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .navlist{
+    width: 0;
+    height: 0;
+  }
+  .header > h1{
+    width: 40vw;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hamburger{
+  height: 25px;
+  width: 25px;
+  color: white;
+  right: 10%;
+  /* display: none; */
+  background-color:transparent;
+  object-fit: cover;
   display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+}
+
+.mobile-menu{
+  background-color: #fed135;
+  color: white;
+  height: 40px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 7px;
+  cursor: pointer;
+  margin-right: 75px;
+}
+
+@media(min-width: 800px){
+  .mobile-menu{
+    display: none;
+  }
+}
+
+.mobile-navlist{
+  height: 0;
+  position: absolute;
+}
+
+.mobile-navlist-open{
+  background-color: rebeccapurple;
+  height: 35vh;
+  width: 100vw;
+}
+
+.main{
+  background-image: url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+  width: 100vw;
+  height: 80vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-cursive-text{
+  color: white;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 35px;
+  padding-top: 7vh;
+}
+
+.main-text{
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.yellow-box{
+  background-color: #fed135;
+  color: white;
+  width: 20vw;
+  height: 7vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 5px;
+  font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
