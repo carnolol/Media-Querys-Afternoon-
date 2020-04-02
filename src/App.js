@@ -33,7 +33,7 @@ class App extends React.Component {
             className="mobile-menu"> MENU
               <img 
                 className="hamburger"
-                src="https://img.icons8.com/cotton/2x/menu.png"></img>
+                src="https://i.ya-webdesign.com/images/navigation-bar-icons-png-2.png"></img>
             </div>
             <ul className={`mobile-navlist ${this.state.menuOpen ? 'mobile-navlist-open' : null} `}>
               <li className="nav-item">SERVICES</li>
