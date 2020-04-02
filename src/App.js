@@ -28,17 +28,19 @@ class App extends React.Component {
               <li className="nav-item">TEAM</li>
               <li className="nav-item">CONTACT</li>
             </ul>
-            <div className="mobile-menu"> MENU
-              <img onClick={this.handleMobileMenu}
+            <div
+            onClick={this.handleMobileMenu}
+            className="mobile-menu"> MENU
+              <img 
                 className="hamburger"
                 src="https://img.icons8.com/cotton/2x/menu.png"></img>
             </div>
             <ul className={`mobile-navlist ${this.state.menuOpen ? 'mobile-navlist-open' : null} `}>
-              {/* <li className="nav-item">SERVICES</li>
+              <li className="nav-item">SERVICES</li>
               <li className="nav-item">PORTFOLIO</li>
               <li className="nav-item">ABOUT</li>
               <li className="nav-item">TEAM</li>
-              <li className="nav-item">CONTACT</li> */}
+              <li className="nav-item">CONTACT</li>
             </ul>
           </nav>
         </header>
